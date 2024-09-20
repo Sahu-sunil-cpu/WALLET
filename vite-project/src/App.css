@@ -1,0 +1,113 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+
+.wrapper {
+  display : flex;
+ 
+  flex-direction: row;
+  padding-top: 3rem ;
+ 
+  justify-content: space-around;
+ margin-left: 3rem;
+  text-align: center;
+ position : absolute;
+  top: 0;
+  height : 39rem;
+  width : 90rem
+ 
+}
+
+.sol{
+    
+    padding: 15px 5px 15px 5px;
+    border: 1px solid pink;
+    outline: #DC1FFF;
+    margin: 15px 10px 15px 10px
+    
+}
+
+
+
+.animation{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+ top: 0;
+ left: 0;
+
+   background: repeating-radial-gradient(#DC1FFF,#03E1FF,#00FFA3, #DC1FFF, #03E1FF,#00FFA3,  #DC1FFF) 0 0/ 1000% no-repeat;
+ animation: BackgroundAnimator 50s linear infinite alternate ;
+  /* filter: blur(30px);  */
+}
+
+
+    .animation1{
+        height: 100%;
+        width: 100%;
+       position: fixed;
+       filter: blur(200px);
+      background-color:black
+    
+     
+    }
+
+
+@keyframes BackgroundAnimator {
+  0% {
+      background-position : 0 10%, 0 0;
+  }
+  5% {
+      background-position : 10% 20%, 0 0;    }
+  10% {
+      background-position :  20% 30%, 0 0;    }
+  15%{
+      background-position : 30% 40%, 0 0;    }
+  20% {
+      background-position : 40% 50%, 0 0;    }
+  25% {
+      background-position : 50% 60%, 0 0;    }
+  30% {
+      background-position : 60% 70%, 0 0;    }
+  35% {
+      background-position : 80% 90%, 0 0;    }
+  40%{
+      background-position : 90% 100%, 0 0;    }
+  45% {
+      background-position : 100% 0%, 0 0;    }
+ 
+  55% {
+      background-position :90% 100%, 0 0;  }
+  60% {
+      background-position :   80% 90%, 0 0;     }
+  65%{
+      background-position :60% 70%, 0 0;   }
+  70% {
+      background-position : 40% 50%, 0 0;    }
+  75%{
+      background-position :30% 40%, 0 0;   }
+  80% {
+      background-position :20% 30%, 0 0;   }
+  85% {
+      background-position : 15% 25%, 0 0;    }
+  90% {
+      background-position : 10% 20%, 0 0;   }
+
+  100%{
+      background-position : 0 10%, 0 0;   }
+  
+}
+
+
+
+/* 
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+} */
+
+
+
